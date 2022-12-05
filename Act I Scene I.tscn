@@ -1,0 +1,290 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://Static The 2nd.gd" type="Script" id=1]
+[ext_resource path="res://jensen impaction.png" type="Texture" id=2]
+[ext_resource path="res://CAKE.jpg" type="Texture" id=3]
+[ext_resource path="res://omori 1.jpg" type="Texture" id=4]
+[ext_resource path="res://2002 toy yoda cam re.jpg" type="Texture" id=5]
+[ext_resource path="res://hot anime character.png" type="Texture" id=6]
+[ext_resource path="res://cheese bread.jpg" type="Texture" id=7]
+[ext_resource path="res://Danny Pig.png" type="Texture" id=8]
+[ext_resource path="res://mince raft.png" type="Texture" id=9]
+[ext_resource path="res://aurora contribution.jpg" type="Texture" id=10]
+[ext_resource path="res://2002 Toyota Camry.gd" type="Script" id=11]
+[ext_resource path="res://VACUUUM.jpg" type="Texture" id=12]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 30.0
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 500, 10 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 95.5, 135.5 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 130.5, 97 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 136.5, 19 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 125.5, 128 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Miles\' Parts" type="Node2D" parent="."]
+
+[node name="C A T THE SECOND" type="RigidBody2D" parent="Miles\' Parts"]
+position = Vector2( 144, -231 )
+gravity_scale = 4.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Miles\' Parts/C A T THE SECOND"]
+shape = SubResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="Miles\' Parts/C A T THE SECOND"]
+current = true
+
+[node name="Sprite" type="Sprite" parent="Miles\' Parts/C A T THE SECOND"]
+scale = Vector2( 0.203069, 0.133706 )
+texture = ExtResource( 2 )
+
+[node name="C A T" type="RigidBody2D" parent="Miles\' Parts"]
+position = Vector2( 221, -285 )
+gravity_scale = 4.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Miles\' Parts/C A T"]
+shape = SubResource( 1 )
+
+[node name="Sprite2" type="Sprite" parent="Miles\' Parts/C A T"]
+position = Vector2( 0, 1 )
+scale = Vector2( 0.203069, 0.133706 )
+texture = ExtResource( 2 )
+
+[node name="Static" type="StaticBody2D" parent="Miles\' Parts"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Miles\' Parts/Static"]
+position = Vector2( 147, 620 )
+shape = SubResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="Miles\' Parts/Static"]
+margin_left = -350.0
+margin_top = 612.0
+margin_right = 653.0
+margin_bottom = 631.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Miles\' Parts/Static"]
+position = Vector2( 89.7, -176.9 )
+polygon = PoolVector2Array( 19, 39, 179, -71, 268, -42, 74, 56 )
+
+[node name="Polygon2D" type="Polygon2D" parent="Miles\' Parts/Static"]
+position = Vector2( -53, -185 )
+color = Color( 0.639216, 0.188235, 0.188235, 1 )
+offset = Vector2( 142.7, 8.10001 )
+polygon = PoolVector2Array( 19, 38, 179, -72, 268, -41, 75, 56 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Miles\' Parts/Static"]
+position = Vector2( -236.3, 14.1 )
+polygon = PoolVector2Array( 19, 39, 179, -71, 268, -42, 74, 56 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="Miles\' Parts/Static"]
+position = Vector2( -379, 6.00001 )
+color = Color( 0.639216, 0.188235, 0.188235, 1 )
+offset = Vector2( 142.7, 8.10001 )
+polygon = PoolVector2Array( 19, 38, 179, -72, 268, -41, 75, 56 )
+
+[node name="Static The 2nd" type="StaticBody2D" parent="Miles\' Parts"]
+position = Vector2( 0, -1 )
+script = ExtResource( 1 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Miles\' Parts/Static The 2nd"]
+position = Vector2( -320, -150 )
+scale = Vector2( 1.42593, 1.15255 )
+polygon = PoolVector2Array( 279, 192, 421, 224, 285, 224 )
+
+[node name="Polygon2D" type="Polygon2D" parent="Miles\' Parts/Static The 2nd"]
+position = Vector2( 0, 1 )
+color = Color( 0.847059, 0.227451, 0.227451, 1 )
+polygon = PoolVector2Array( 77, 70, 280, 107, 85, 109 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Miles\' Parts/Static The 2nd"]
+polygon = PoolVector2Array( 308, 127, 419, 204, 422, 242, 271, 277, 272, 178 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="Miles\' Parts/Static The 2nd"]
+color = Color( 0.737255, 0.0588235, 0.0588235, 1 )
+polygon = PoolVector2Array( 308, 126, 420, 203, 421, 241, 271, 278, 272, 178 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Miles\' Parts/Static The 2nd"]
+position = Vector2( -14, -2 )
+polygon = PoolVector2Array( 836, 333, 849, 615, 803, 615, 798, 340 )
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Miles\' Parts/Static The 2nd"]
+position = Vector2( 98, -63 )
+polygon = PoolVector2Array( 836, 333, 849, 615, 803, 615, 798, 340 )
+
+[node name="Polygon2D3" type="Polygon2D" parent="Miles\' Parts/Static The 2nd"]
+color = Color( 0.980392, 0, 0, 1 )
+polygon = PoolVector2Array( 784, 334, 791, 613, 835, 614, 822, 329 )
+
+[node name="Polygon2D4" type="Polygon2D" parent="Miles\' Parts/Static The 2nd"]
+position = Vector2( 112, -58 )
+color = Color( 0.980392, 0, 0, 1 )
+polygon = PoolVector2Array( 784, 334, 791, 613, 835, 614, 822, 329 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Miles\' Parts/Static The 2nd"]
+margin_left = 466.0
+margin_top = 185.0
+margin_right = 693.0
+margin_bottom = 232.0
+text = "OMORI EAT CHEESEBREAD OM NOM NOM NOM
+THICC OMORI"
+
+[node name="TextEdit" type="TextEdit" parent="Miles\' Parts/Static The 2nd"]
+margin_left = 961.0
+margin_top = 540.0
+margin_right = 1042.0
+margin_bottom = 576.0
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Miles\' Parts/Static The 2nd"]
+margin_left = 955.0
+margin_top = 515.0
+margin_right = 1281.0
+margin_bottom = 532.0
+text = "What's 9 + 10?"
+
+[node name="FallStopper" type="CollisionPolygon2D" parent="Miles\' Parts/Static The 2nd"]
+position = Vector2( 0, 1 )
+polygon = PoolVector2Array( 832, 554, 903, 553, 903, 563, 833, 563 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Miles\' Parts"]
+margin_left = 380.0
+margin_top = 54.0
+margin_right = 794.0
+margin_bottom = 85.0
+rect_scale = Vector2( 3, 3 )
+text = "(But Terraria is better)"
+
+[node name="Contribution" type="Node2D" parent="."]
+
+[node name="Emma\'s Dedication" type="StaticBody2D" parent="Contribution"]
+position = Vector2( 2, 61 )
+
+[node name="Cake" type="Sprite" parent="Contribution/Emma\'s Dedication"]
+position = Vector2( 177.5, 181.5 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Contribution/Emma\'s Dedication"]
+position = Vector2( 176, 181 )
+shape = SubResource( 4 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Contribution/Emma\'s Dedication"]
+margin_left = -20.0
+margin_top = 65.0
+margin_right = 88.0
+margin_bottom = 117.0
+text = "THAT ONE ->
+(REAL)"
+
+[node name="Aurora" type="StaticBody2D" parent="Contribution"]
+position = Vector2( 171, -99 )
+rotation = 0.174533
+
+[node name="AuroraContribution" type="Sprite" parent="Contribution/Aurora"]
+position = Vector2( 891, 804 )
+rotation = 0.174533
+texture = ExtResource( 10 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Contribution/Aurora"]
+position = Vector2( 892.5, 805 )
+rotation = 0.174533
+shape = SubResource( 6 )
+
+[node name="Ryn\'s Dedication" type="StaticBody2D" parent="Contribution"]
+
+[node name="Omori1" type="Sprite" parent="Contribution/Ryn\'s Dedication"]
+position = Vector2( 557, 258.5 )
+scale = Vector2( 1.088, 0.196808 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Contribution/Ryn\'s Dedication"]
+position = Vector2( 557.5, 258.5 )
+scale = Vector2( 1.00146, 1 )
+shape = SubResource( 5 )
+
+[node name="CheeseBread" type="Sprite" parent="Contribution/Ryn\'s Dedication"]
+position = Vector2( 753, 284 )
+rotation = 0.375246
+scale = Vector2( 0.627778, 0.165555 )
+texture = ExtResource( 7 )
+
+[node name="CheeseBread2" type="Sprite" parent="Contribution/Ryn\'s Dedication"]
+position = Vector2( 550.5, 352.5 )
+scale = Vector2( 1.15111, 0.662222 )
+texture = ExtResource( 7 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Contribution/Ryn\'s Dedication"]
+polygon = PoolVector2Array( 694, 241, 826, 293, 812, 327, 680, 276 )
+
+[node name="Danny\'s Part" type="StaticBody2D" parent="Contribution"]
+
+[node name="DannyPig" type="Sprite" parent="Contribution/Danny\'s Part"]
+position = Vector2( 1220, 949 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Contribution/Danny\'s Part"]
+position = Vector2( 1219.5, 949 )
+shape = SubResource( 7 )
+
+[node name="MinceRaft" type="Sprite" parent="."]
+position = Vector2( 582, 20 )
+scale = Vector2( 1.33792, 0.326637 )
+texture = ExtResource( 9 )
+
+[node name="Jensens" type="Node2D" parent="."]
+
+[node name="HotAnimeCharacter2" type="Sprite" parent="Jensens"]
+position = Vector2( 127, -422 )
+scale = Vector2( 0.56087, 0.14431 )
+texture = ExtResource( 6 )
+
+[node name="HotAnimeCharacter3" type="Sprite" parent="Jensens"]
+position = Vector2( 1385, 761 )
+scale = Vector2( 0.0920317, 0.320191 )
+texture = ExtResource( 6 )
+offset = Vector2( -4933.08, -2195.57 )
+
+[node name="HotAnimeCharacter4" type="Sprite" parent="Jensens"]
+position = Vector2( 3322, 1280 )
+scale = Vector2( 0.334402, 0.152703 )
+texture = ExtResource( 6 )
+offset = Vector2( -4933.08, -2195.57 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Jensens"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Jensens/StaticBody2D"]
+polygon = PoolVector2Array( 1377, 867, 1939, 867, 1942, 725, 1963, 725, 1968, 1020, 1378, 1024 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Jensens/StaticBody2D"]
+margin_left = 1463.0
+margin_top = 777.0
+margin_right = 1632.0
+margin_bottom = 812.0
+rect_scale = Vector2( 2, 2 )
+text = "Press F a lot
+RIP Technoblade"
+
+[node name="2002 Toyota Camry" type="Node2D" parent="."]
+position = Vector2( 1200, 400 )
+script = ExtResource( 11 )
+
+[node name="Sprite" type="Sprite" parent="2002 Toyota Camry"]
+texture = ExtResource( 5 )
+
+[node name="Qais Stuff" type="StaticBody2D" parent="."]
+
+[node name="Vacuuum" type="Sprite" parent="Qais Stuff"]
+position = Vector2( 1221, 638 )
+texture = ExtResource( 12 )
+
+[connection signal="text_changed" from="Miles' Parts/Static The 2nd/TextEdit" to="Miles' Parts/Static The 2nd" method="_on_TextEdit_text_changed"]
