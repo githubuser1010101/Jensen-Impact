@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "KinematicBody",
+"class": "MovementController",
+"language": "GDScript",
+"path": "res://Player/MovementController.gd"
+} ]
+_global_script_class_icons={
+"MovementController": ""
+}
+
 [application]
 
 config/name="Jensen Impact"

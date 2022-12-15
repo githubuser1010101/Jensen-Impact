@@ -35,9 +35,9 @@ func get_title():
 
 func _input(event):
 	if event.is_action_pressed("ui_focus_next"):
-		fcounter = fcounter + 1
-		if fcounter > 19:
-			if questionpassed2 != false:
+		if questionpassed2 == true:
+			fcounter = fcounter + 1
+			if fcounter >= 20:	
 				get_tree().change_scene("res://Act I Scene II.tscn")
 
 func _process(delta):

@@ -1,12 +1,14 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://trading ui.png" type="Texture" id=1]
 [ext_resource path="res://emerald.png" type="Texture" id=2]
 [ext_resource path="res://dirt.jpg" type="Texture" id=3]
+[ext_resource path="res://Act I Scene II.gd" type="Script" id=4]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 4 )
 
 [node name="villager ui" type="Control" parent="."]
 margin_right = 40.0
@@ -15,24 +17,25 @@ margin_bottom = 40.0
 [node name="em roald" type="Sprite" parent="villager ui"]
 position = Vector2( 249, 218 )
 scale = Vector2( 1.08, 0.7 )
-z_index = 1
+z_index = -4
 texture = ExtResource( 2 )
 
 [node name="em roald2" type="Sprite" parent="villager ui"]
 position = Vector2( 260.5, 114 )
 scale = Vector2( 1.01, 0.62 )
-z_index = 1
+z_index = -4
 texture = ExtResource( 2 )
 
 [node name="durht2" type="Sprite" parent="villager ui"]
 position = Vector2( 762, 102.5 )
 scale = Vector2( 0.551111, 0.395555 )
-z_index = 1
+z_index = -4
 texture = ExtResource( 3 )
 
 [node name="BaseUI" type="Sprite" parent="villager ui"]
-position = Vector2( 512, 300 )
+position = Vector2( 511, 300 )
 scale = Vector2( 4.4329, 2.75229 )
+z_index = -10
 texture = ExtResource( 1 )
 
 [node name="Button" type="Button" parent="villager ui"]
@@ -43,3 +46,14 @@ margin_bottom = 406.0
 rect_scale = Vector2( 0.75, 0.4 )
 size_flags_stretch_ratio = 0.0
 icon = ExtResource( 3 )
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+margin_left = 243.0
+margin_top = 205.0
+margin_right = 768.0
+margin_bottom = 263.0
+window_title = "Are you sure?"
+dialog_text = "By clicking \"ok\", you will be selling your soul and personal information to Miles."
+
+[connection signal="pressed" from="villager ui/Button" to="." method="_on_Button_pressed"]
+[connection signal="confirmed" from="AcceptDialog" to="." method="_on_AcceptDialog_confirmed"]
