@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/omori_plush.obj-04134eda3a892b3e5a85960771964b72.mesh"
+
+[deps]
+
+files=[ "res://.import/omori_plush.obj-04134eda3a892b3e5a85960771964b72.mesh" ]
+
+source_file="res://omori_plush.obj"
+dest_files=[ "res://.import/omori_plush.obj-04134eda3a892b3e5a85960771964b72.mesh", "res://.import/omori_plush.obj-04134eda3a892b3e5a85960771964b72.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
